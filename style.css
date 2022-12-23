@@ -1,2 +1,73 @@
 @import url('reset.css');
 @import url('normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+@import url('grid.css');
+
+
+
+:root {
+    --prim-txt-color: #fff;
+    --sec-txt-color: #da0;
+    --ter-txt-color: #fd0;
+    --prim-bg-color: #222;
+    --sec-bg-color: #333;
+    --ter-bg-color: #555;
+
+    --button-bg-color: #d00;
+    --hover-button-bg-color: #f00;
+
+    --button-txt-color: #fff;
+
+    --border-color: #600;
+    --focus-border-color: #505;
+}
+
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: "Century Gothic"; */
+    /* font-family: 'Sawarabi Gothic', sans-serif; */
+}
+
+body {
+    background-color: var(--prim-bg-color);
+    color: var(--prim-txt-color);
+}
+
+.input {
+    border-radius: 6px;
+    outline: none;
+    border: solid 1px var(--border-color);
+    background-color: var(--ter-bg-color);
+    color: var(--button-txt-color);   
+}
+
+.button {
+    background-color: var(--button-bg-color);
+    border-radius: 6px;
+    border: solid 1px var(--border-color);
+}
+
+.sqrbutton {
+    width: 3em;
+    height: 3em;
+}
+
+.topbar {
+    width: 100vw;
+    padding: 4px;
+    align-items: center;
+    position: fixed;
+    background-color: var(--prim-bg-color);
+    box-shadow: 0px 0px 10px var(--ter-bg-color);
+}
+
+.logo {
+    padding-left: 30px;
+}
+
+.topsearch,
+.topbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
