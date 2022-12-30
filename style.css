@@ -5,8 +5,8 @@
 
 :root {
     --prim-txt-color: #fff;
-    --sec-txt-color: #da0;
-    --ter-txt-color: #fd0;
+    --sec-txt-color: #c00;
+    --ter-txt-color: #555;
     --prim-bg-color: #222;
     --sec-bg-color: #333;
     --ter-bg-color: #555;
@@ -18,17 +18,18 @@
 
     --border-color: #600;
     --focus-border-color: #909;
-    
+
     --title-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --prim-text-font-family: 'Century Gothic';
-    --sec-text-font-family: 'Sawarabi Gothic', sans-serif; 
+    --sec-text-font-family: 'Sawarabi Gothic', sans-serif;
 }
 
-::-webkit-scrollbar              {
+::-webkit-scrollbar {
     background-color: var(--border-color);
     width: 10px;
 }
-::-webkit-scrollbar-thumb        {
+
+::-webkit-scrollbar-thumb {
     background-color: var(--sec-bg-color);
     border-radius: 8px;
 }
@@ -36,11 +37,17 @@
 body {
     background-color: var(--prim-bg-color);
     color: var(--prim-txt-color);
-    font-family: var(--prim-text-font-family); 
+    font-family: var(--prim-text-font-family);
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, input {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input {
     font-family: var(--title-font-family)
 }
 
@@ -53,13 +60,14 @@ a:hover {
     color: var(--sec-txt-color)
 }
 
-.input, .input:focus {
-    border-radius: 0.3em;
+.input,
+.input:focus {
+    border-radius: 4px;
     border: solid 1px var(--border-color);
     background-color: var(--ter-bg-color);
     color: var(--button-txt-color);
-    font-family: var(--prim-text-font-family); 
-    padding: 0 10px;
+    font-family: var(--prim-text-font-family);
+    padding: 0 20px;
 }
 
 :focus-visible {
@@ -68,7 +76,7 @@ a:hover {
 
 .button {
     background-color: var(--button-bg-color);
-    border-radius: 0.3em;
+    border-radius: 4px;
     border: solid 1px var(--border-color);
 }
 
@@ -84,11 +92,6 @@ a:hover {
     overflow: hidden;
 }
 
-.background {
-    gap: 24px;
-    width: 100vw;
-}    
-
 .topbar {
     width: 100vw;
     padding: 4px 0;
@@ -97,6 +100,11 @@ a:hover {
     top: 0;
     background-color: var(--prim-bg-color);
     box-shadow: 0px 0px 10px var(--ter-bg-color);
+    z-index: 1;
+}
+
+.mt_logo {
+    border-radius: 6px;
 }
 
 .divlogo {
@@ -118,9 +126,10 @@ a:hover {
     padding: 24px 64px;
 }
 
-.profile, .interactions, .conections {
+.profile,
+.interactions,
+.conections {
     border: solid 1px var(--border-color);
-    height: 1500px;
     display: block;
 }
 
@@ -137,23 +146,82 @@ a:hover {
     object-fit: cover;
 }
 
-.avatar_cont {
-    width: 128px;
-    height: 128px;
+.avatar {
+    display: flex;
+    margin: auto;
     border: solid 3px white;
+    border-radius: 3px;
+}
+
+.avatar_cont {
     position: relative;
     top: -50px;
-    margin: auto;
-    border-radius: 3px;
 }
 
 .search_svg path {
     fill: var(--ter-bg-color);
 }
 
+.notification {
+    
+}
+
+.dotcont {
+    position: relative;
+    z-index: 1;
+    top: -45px;
+    right: -15px;
+}
+
 .reddot {
     fill: var(--prim-bg-color);
-    position: relative;
-    top: -18px;
-    right: -3px;
+}
+
+.profile_name {
+    text-align: center;
+}
+
+.profile_info {
+    text-align: center;
+    padding: 0 30px;
+}
+
+p {
+    color: var(--sec-txt-color)
+}
+
+.profile_info>p:nth-child(4) {
+    color: var(--ter-txt-color);
+    text-align: justify;
+}
+
+.counter {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    text-align: center;
+    line-height: 0.8em;
+}
+
+.buttons {
+    margin: -30px 30px 0 30px;
+}
+
+.lgbtn {
+    background-color: var(--sec-bg-color);
+    height: 48px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    text-indent: 10px;
+    margin-bottom: 5px;
+}
+
+a:visited > .lgbtn {
+    background-color: var(--button-bg-color);
+}
+
+.bell {
+    padding: 9px;
 }

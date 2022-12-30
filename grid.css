@@ -1,8 +1,8 @@
 .row,
 .grid {
   display: grid;
-  /* row-gap: 24px;
-  column-gap: 24px; */
+  row-gap: 24px;
+  column-gap: 24px;
   grid-template-columns: repeat(12, 12fr);
 }
 
