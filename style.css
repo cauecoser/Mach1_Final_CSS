@@ -4,9 +4,12 @@
 @import url('grid.css');
 
 :root {
+    --principal-bg-color: #111;
+
     --prim-txt-color: #fff;
     --sec-txt-color: #c00;
     --ter-txt-color: #555;
+
     --prim-bg-color: #222;
     --sec-bg-color: #333;
     --ter-bg-color: #555;
@@ -27,6 +30,8 @@
 ::-webkit-scrollbar {
     background-color: var(--border-color);
     width: 10px;
+    height: 10px;
+    border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -78,6 +83,7 @@ a:hover {
     background-color: var(--button-bg-color);
     border-radius: 4px;
     border: solid 1px var(--border-color);
+    height: 1.5em;
 }
 
 .button:hover {
@@ -94,10 +100,10 @@ a:hover {
 
 .topbar {
     width: 100vw;
-    padding: 4px 0;
     align-items: center;
     position: sticky;
     top: 0;
+    padding: 6px 0;
     background-color: var(--prim-bg-color);
     box-shadow: 0px 0px 10px var(--ter-bg-color);
     z-index: 1;
@@ -105,25 +111,19 @@ a:hover {
 
 .mt_logo {
     border-radius: 6px;
-}
-
-.divlogo {
-    padding-left: 30px;
-    align-items: center;
-    display: flex;
+    margin: 0 16px;
 }
 
 .topsearch,
 .topbuttons {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     gap: 2px;
+    padding-right: 26px;
 }
 
 .pagebody {
-    gap: 24px;
-    height: max-content;
-    padding: 24px 64px;
+    margin: 0 34px 24px 24px;
 }
 
 .profile,
@@ -131,12 +131,22 @@ a:hover {
 .conections {
     border: solid 1px var(--border-color);
     display: block;
+    border-radius: 8px;
+}
+
+.profile {
+    background-color: var(--principal-bg-color);
+}
+
+.interactions {
+    border: none;
 }
 
 .cover_cont {
     width: 100%;
     height: 100px;
     background-color: var(--sec-bg-color);
+    border-radius: 8px;
     overflow: hidden;
 }
 
@@ -146,24 +156,20 @@ a:hover {
     object-fit: cover;
 }
 
-.avatar {
-    display: flex;
-    margin: auto;
-    border: solid 3px white;
-    border-radius: 3px;
-}
-
 .avatar_cont {
     position: relative;
     top: -50px;
 }
 
-.search_svg path {
-    fill: var(--ter-bg-color);
+.avatar {
+    display: flex;
+    margin: auto;
+    border: solid 3px white;
+    border-radius: 4px;
 }
 
-.notification {
-    
+.search_svg path {
+    fill: var(--ter-bg-color);
 }
 
 .dotcont {
@@ -187,11 +193,16 @@ a:hover {
 }
 
 p {
-    color: var(--sec-txt-color)
+    color: var(--ter-txt-color);
+    text-align: center;
 }
 
-.profile_info>p:nth-child(4) {
-    color: var(--ter-txt-color);
+.descript {
+    color: var(--sec-txt-color);
+    text-align: center;
+}
+
+.info {
     text-align: justify;
 }
 
@@ -201,6 +212,15 @@ p {
     justify-content: center;
     text-align: center;
     line-height: 0.8em;
+}
+
+.followers, .posts {
+    background-color: var(--sec-bg-color);
+    padding: 5px;
+    text-align: center;
+    width: 90px;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 .buttons {
@@ -216,6 +236,7 @@ p {
     align-items: center;
     text-indent: 10px;
     margin-bottom: 5px;
+    border: none;
 }
 
 a:visited > .lgbtn {
@@ -223,5 +244,136 @@ a:visited > .lgbtn {
 }
 
 .bell {
-    padding: 9px;
+    padding: 10px;
+}
+
+.stories {
+    white-space: nowrap;
+    overflow-y: hidden;
+
+}
+
+.newstory, .story {
+    width: 110px;
+    height: 152px;
+    border-radius: 4px;
+    background-color: #FFF;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    margin: 1px;
+}
+
+.newstory {
+    border: dashed 1px var(--border-color);
+}
+
+.insidecard {
+    margin-top: 50px;
+}
+
+.storyimg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.postarea {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    margin: 24px 0;
+    padding: 12px;
+    box-sizing: border-box;
+    border: solid 1px var(--border-color);
+    border-radius: 6px;
+    background-color: var(--principal-bg-color);
+}
+
+textarea {
+    width: 100%;
+    padding: 14px;
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 4px;
+}
+
+.post_text {
+    width: 100%;
+}
+
+.formbase {
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formbase p {
+    font-size: 0.9em;
+}
+
+.attachments {
+    display: flex;
+    gap: 4px;
+}
+
+.submit {
+    height: 3.5em;
+    width: 5em;
+}
+
+.postcard {
+    background-color: var(--principal-bg-color);
+    border: solid 1px var(--border-color);
+    border-radius: 6px;
+    margin-top: 24px;
+}
+
+.card_head {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    /* margin: 24px 0; */
+    padding: 12px;
+    box-sizing: border-box;
+    /* border: solid 1px var(--border-color); */
+    border-radius: 6px;
+}
+
+.card_head h3 {
+    margin: 0;
+    line-height: 20px;
+}
+
+.card_head p {
+    font-size: 0.8em;
+    line-height: 20px;
+    text-align: left;
+}
+
+.card_body {
+    padding: 0 12px;
+}
+
+.card_body p {
+    text-align: left;
+}
+
+.another_user {
+    display: flex;
+}
+
+.coment_area {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    margin: 24px 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.card_base {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
 }

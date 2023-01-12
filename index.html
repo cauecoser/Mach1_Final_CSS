@@ -17,15 +17,15 @@
 
 <body>
 
-    <div class="background">
+    <div class="background grid">
 
-        <div class="topbar row">
+        <div class="topbar row col-lg-12 col-md-12">
 
-            <div class="divlogo col-lg-6">
+            <div class="divlogo col-lg-6 col-md-5">
                 <a href="#"><img class="mt_logo" src="./assets/images/logo_mt_sm.png" alt="metal_trybes_logo"></a>
             </div>
 
-            <div class="topsearch col-lg-3">
+            <div class="topsearch col-lg-3 col-md-4">
                 <input type="text" class="input" name="search" id="searchinput" placeholder="Buscar...">
                 <a href="#">
                     <button class="button sqrform" value="">
@@ -45,7 +45,7 @@
                 </a>
             </div>
 
-            <div class="topbuttons col-lg-3">
+            <div class="topbuttons col-lg-3 col-md-3">
                 <a href="#">
                     <button class="button sqrform" value="">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,19 +88,20 @@
                     <button class="button sqrform" value="">
                         <div class="bell">
                             <svg class="notification" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_2177_111)">
-                                <path opacity="0.3" d="M12 6.5C9.51 6.5 8 8.52 8 11V17H16V11C16 8.52 14.49 6.5 12 6.5Z"
-                                    fill="#2E2E2E" />
-                                <path
-                                    d="M12 22C13.1 22 14 21.1 14 20H10C10 21.1 10.9 22 12 22ZM18 16V11C18 7.93 16.37 5.36 13.5 4.68V4C13.5 3.17 12.83 2.5 12 2.5C11.17 2.5 10.5 3.17 10.5 4V4.68C7.64 5.36 6 7.92 6 11V16L4 18V19H20V18L18 16ZM16 17H8V11C8 8.52 9.51 6.5 12 6.5C14.49 6.5 16 8.52 16 11V17Z"
-                                    fill="#2E2E2E" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_2177_111">
-                                    <rect width="24" height="24" fill="white" />
-                                </clipPath>
-                            </defs>
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2177_111)">
+                                    <path opacity="0.3"
+                                        d="M12 6.5C9.51 6.5 8 8.52 8 11V17H16V11C16 8.52 14.49 6.5 12 6.5Z"
+                                        fill="#2E2E2E" />
+                                    <path
+                                        d="M12 22C13.1 22 14 21.1 14 20H10C10 21.1 10.9 22 12 22ZM18 16V11C18 7.93 16.37 5.36 13.5 4.68V4C13.5 3.17 12.83 2.5 12 2.5C11.17 2.5 10.5 3.17 10.5 4V4.68C7.64 5.36 6 7.92 6 11V16L4 18V19H20V18L18 16ZM16 17H8V11C8 8.52 9.51 6.5 12 6.5C14.49 6.5 16 8.52 16 11V17Z"
+                                        fill="#2E2E2E" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2177_111">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
                             </svg>
                         </div>
                         <div class="dotcont">
@@ -120,8 +121,8 @@
 
         </div>
 
-        <div class="pagebody row">
-            <div class="profile col-lg-4">
+        <div class="pagebody row col-lg-12">
+            <div class="profile col-lg-4 d-md-none d-sm-none">
                 <div class="cover_cont">
                     <img class="cover" src="./assets/images/Iron-Maiden-Logo.png" alt="cover_image">
                 </div>
@@ -129,7 +130,7 @@
                     <img class="avatar" src="./assets/images/avatar.jpg" alt="avatar_image">
                     <div class="profile_info">
                         <h1 class="profile_name"><em>Iron Maiden</em></h1>
-                        <p>Metal band and generations influencer.</p>
+                        <p class="descript">Metal band and generations influencer.</p>
                         <br>
                         <p class="info">English heavy metal band formed in Leyton, East London, in 1975 by bassist and
                             songwriter Steve Harris. Pioneer in the NWOBHM (New Wave Of British Heavy Metal) movement.
@@ -195,7 +196,7 @@
                             Conections
                         </button>
                     </a>
-                    <a href="www.globo.com">
+                    <a href="#">
                         <button class="button lgbtn">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -256,14 +257,214 @@
                 </div>
             </div>
 
+            <div class="interactions col-lg-5 col-md-7 col-sm-12">
+
+                <div class="stories">
+                    <div class="newstory">
+                        <div class="insidecard">
+                            <a href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2395_62)">
+                                        <path opacity="0.3"
+                                            d="M12 4C7.59 4 4 7.59 4 12C4 16.41 7.59 20 12 20C16.41 20 20 16.41 20 12C20 7.59 16.41 4 12 4ZM17 13H13V17H11V13H7V11H11V7H13V11H17V13Z"
+                                            fill="#2E2E2E" />
+                                        <path
+                                            d="M13 7H11V11H7V13H11V17H13V13H17V11H13V7ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+                                            fill="#2E2E2E" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2395_62">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>New Story</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="./assets/images/album1.jpg" alt="story" class="storyimg">
+                    </div>
+                    <div class="story">
+                        <img src="./assets/images/album2.jpg" alt="story" class="storyimg">
+                    </div>
+                    <div class="story">
+                        <img src="./assets/images/album3.jpg" alt="story" class="storyimg">
+                    </div>
+                    <div class="story">
+                        <img src="./assets/images/album4.jpg" alt="story" class="storyimg">
+                    </div>
+                    <div class="story">
+                        <img src="./assets/images/album5.jpg" alt="story" class="storyimg">
+                    </div>
+                    <div class="story">
+                        <img src="./assets/images/album6.jpg" alt="story" class="storyimg">
+                    </div>
+                    <div class="story">
+                        <img src="./assets/images/album7.jpg" alt="story" class="storyimg">
+                    </div>
+                    <div class="story">
+                        <img src="./assets/images/album8.jpg" alt="story" class="storyimg">
+                    </div>
+                    <div class="story">
+                        <img src="./assets/images/album9.jpg" alt="story" class="storyimg">
+                    </div>
+                    <div class="story">
+                        <img src="./assets/images/album10.jpg" alt="story" class="storyimg">
+                    </div>
+                    <div class="story">
+                        <img src="./assets/images/album11.jpg" alt="story" class="storyimg">
+                    </div>
+                    <div class="story">
+                        <img src="./assets/images/album13.jpg" alt="story" class="storyimg">
+                    </div>
+                    <div class="story">
+                        <img src="./assets/images/album14.jpg" alt="story" class="storyimg">
+                    </div>
+                </div>
+
+                <form action="" method="post">
+                    <div class="postarea">
+                        <div>
+                            <button class="button sqrform" value="">
+                                <img src="./assets/images/profile.jpg" alt="small_avatar">
+                            </button>
+                        </div>
+                        <div class="post_text">
+                            <div>
+                                <textarea placeholder="How's it going?..." rows="4"></textarea>
+                            </div>
+                            <div class="formbase">
+                                <div class="attachments">
+                                    <p>incluir: </p>
+                                    <button class="button">Foto</button>
+                                    <button class="button">Vídeo</button>
+                                    <button class="button">Evento</button>
+                                </div>
+                                <div>
+                                    <input class="button submit" type="submit" value="Post">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="postcard">
+                    <div class="card_head">
+                        <div>
+                            <button class="button sqrform" value="">
+                                <img src="" alt="small_avatar">
+                            </button>
+                        </div>
+
+                        <div>
+                            <div class="another_user">
+                                <h3>Metallica </h3>
+                                <p>&nbsp;- 2 hours ago</p>
+                            </div>
+
+                            <div>
+                                <p>Nothing else matters...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card_body">
+                        <div class="another_user_post">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi provident suscipit
+                                autem, quasi quam aspernatur, laboriosam omnis error, accusamus quae eius eos! Adipisci
+                                accusantium natus quidem distinctio non commodi eos hic labore asperiores facere totam
+                                ratione sint, nihil fugit et voluptate. Voluptates animi ex tenetur eveniet at, corporis
+                                minima? <a href="#">More...</a></p>
+                        </div>
+                        <div class="card_base">
+                            <div>
+                                <button class="button">Like</button>
+                                <button class="button">Share</button>
+                            </div>
+                            <div>
+                                <p>30 coments</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="coment_area">
+                            <div>
+                                <button class="button sqrform" value="">
+                                    <img src="./assets/images/profile.jpg" alt="small_avatar">
+                                </button>
+                            </div>
+                            <div class="post_text">
+                                <div>
+                                    <textarea placeholder="Comment about it..." rows="1"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="postcard">
+                    <div class="card_head">
+                        <div>
+                            <button class="button sqrform" value="">
+                                <img src="" alt="small_avatar">
+                            </button>
+                        </div>
+
+                        <div>
+                            <div class="another_user">
+                                <h3>Pantera </h3>
+                                <p>&nbsp;- 3 hours ago</p>
+                            </div>
+
+                            <div>
+                                <p>5 minutes alone!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card_body">
+                        <div class="another_user_post">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur possimus repudiandae distinctio a, totam dolor minus reprehenderit voluptatem ipsam repellendus, ab molestiae architecto saepe odit ipsa quo soluta laudantium itaque? Tempore error adipisci animi velit dolor? <a href="#">More...</a></p>
+                        </div>
+                        <div class="card_base">
+                            <div>
+                                <button class="button">Like</button>
+                                <button class="button">Share</button>
+                            </div>
+                            <div>
+                                <p>102 coments</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="coment_area">
+                            <div>
+                                <button class="button sqrform" value="">
+                                    <img src="./assets/images/profile.jpg" alt="small_avatar">
+                                </button>
+                            </div>
+                            <div class="post_text">
+                                <div>
+                                    <textarea placeholder="Comment about it..." rows="1"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
 
-            <div class="interactions col-lg-5"></div>
-            <div class="conections col-lg-3"></div>
+
+
+
+
+
+                <div class="conections col-lg-3 col-md-5 d-sm-none"></div>
+            </div>
+
         </div>
-
-    </div>
 
 </body>
 
