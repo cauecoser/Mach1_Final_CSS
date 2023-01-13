@@ -144,7 +144,7 @@ a:hover {
 }    
 
 svg path {
-    fill: var(--sec-bg-color);
+    fill: var(--principal-bg-color);
 }
 
 .dotcont {
