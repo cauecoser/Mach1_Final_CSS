@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
 @import url('grid.css');
 
+
+/*==================================== FORMATAÇÕES GERAIS ====================================*/
+.background {
+    position: relative;
+    overflow: auto  ;
+}
+
 :root {
     --principal-bg-color: #111;
 
@@ -56,6 +63,19 @@ input {
     font-family: var(--title-font-family)
 }
 
+p {
+    color: var(--ter-txt-color);
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    padding: 14px;
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 4px;
+}
+
 a {
     text-decoration: none;
     color: var(--prim-txt-color);
@@ -98,6 +118,7 @@ a:hover {
     overflow: hidden;
 }
 
+/*==================================== BARRA DO TOPO ====================================*/
 .topbar {
     width: 100vw;
     align-items: center;
@@ -120,56 +141,10 @@ a:hover {
     justify-content: right;
     gap: 2px;
     padding-right: 26px;
-}
+}    
 
-.pagebody {
-    margin: 0 34px 24px 24px;
-}
-
-.profile,
-.interactions,
-.conections {
-    border: solid 1px var(--border-color);
-    display: block;
-    border-radius: 8px;
-}
-
-.profile {
-    background-color: var(--principal-bg-color);
-}
-
-.interactions {
-    border: none;
-}
-
-.cover_cont {
-    width: 100%;
-    height: 100px;
-    background-color: var(--sec-bg-color);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.cover {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.avatar_cont {
-    position: relative;
-    top: -50px;
-}
-
-.avatar {
-    display: flex;
-    margin: auto;
-    border: solid 3px white;
-    border-radius: 4px;
-}
-
-.search_svg path {
-    fill: var(--ter-bg-color);
+svg path {
+    fill: var(--sec-bg-color);
 }
 
 .dotcont {
@@ -183,6 +158,56 @@ a:hover {
     fill: var(--prim-bg-color);
 }
 
+.bell {
+    padding: 10px;
+}
+
+/*==================================== SEÇÕES - GERAL ====================================*/
+.pagebody {
+    margin: 24px 64px 24px 64px;
+}    
+
+.profile {
+    background-color: var(--principal-bg-color);
+    border: solid 1px var(--border-color);
+}    
+
+.interactions,
+.conections {
+    border-radius: 8px;
+}    
+
+.interactions {
+    border: none;
+}    
+
+/*==================================== SEÇÃO 1 - PERFIL ====================================*/
+.cover_cont {
+    width: 100%;
+    height: 100px;
+    background-color: var(--sec-bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+}    
+
+.cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}    
+
+.avatar_cont {
+    position: relative;
+    top: -50px;
+}    
+
+.avatar {
+    display: flex;
+    margin: auto;
+    border: solid 3px white;
+    border-radius: 4px;
+}    
+
 .profile_name {
     text-align: center;
 }
@@ -190,11 +215,6 @@ a:hover {
 .profile_info {
     text-align: center;
     padding: 0 30px;
-}
-
-p {
-    color: var(--ter-txt-color);
-    text-align: center;
 }
 
 .descript {
@@ -214,7 +234,8 @@ p {
     line-height: 0.8em;
 }
 
-.followers, .posts {
+.followers,
+.posts {
     background-color: var(--sec-bg-color);
     padding: 5px;
     text-align: center;
@@ -231,7 +252,6 @@ p {
     background-color: var(--sec-bg-color);
     height: 48px;
     width: 100%;
-    text-align: left;
     display: flex;
     align-items: center;
     text-indent: 10px;
@@ -239,21 +259,19 @@ p {
     border: none;
 }
 
-a:visited > .lgbtn {
+a:visited>.lgbtn {
     background-color: var(--button-bg-color);
 }
 
-.bell {
-    padding: 10px;
-}
-
+/*==================================== SEÇÃO 2 - STORIES ====================================*/
 .stories {
     white-space: nowrap;
     overflow-y: hidden;
 
 }
 
-.newstory, .story {
+.newstory,
+.story {
     width: 110px;
     height: 152px;
     border-radius: 4px;
@@ -278,6 +296,7 @@ a:visited > .lgbtn {
     object-fit: cover;
 }
 
+/*==================================== SEÇÃO 2 - ÁREA DE POSTAGEM ====================================*/
 .postarea {
     width: 100%;
     display: flex;
@@ -290,26 +309,21 @@ a:visited > .lgbtn {
     background-color: var(--principal-bg-color);
 }
 
-textarea {
-    width: 100%;
-    padding: 14px;
-    box-sizing: border-box;
-    resize: none;
-    border-radius: 4px;
-}
-
 .post_text {
     width: 100%;
+    box-sizing: border-box;
 }
 
-.formbase {
+.formbase,
+.user_info {
+    width: 100%;
     margin: 12px 0;
     display: flex;
     justify-content: space-between;
 }
 
-.formbase p {
-    font-size: 0.9em;
+.formbase p, .formbase button {
+    font-size: 0.75em;
 }
 
 .attachments {
@@ -322,6 +336,7 @@ textarea {
     width: 5em;
 }
 
+/*==================================== SEÇÃO 2 - POST DE TERCEIROS ====================================*/
 .postcard {
     background-color: var(--principal-bg-color);
     border: solid 1px var(--border-color);
@@ -356,11 +371,16 @@ textarea {
 }
 
 .card_body p {
-    text-align: left;
+    text-align: justify;
 }
 
 .another_user {
     display: flex;
+}
+
+.another_user_post img {
+    width: 100%;
+    border-radius: 6px;
 }
 
 .coment_area {
@@ -376,4 +396,73 @@ textarea {
     display: flex;
     justify-content: space-between;
     margin: 12px 0;
+}
+/*==================================== SEÇÃO 3 ====================================*/
+
+.like_you, .booming {
+    display: grid;
+    padding: 6px 12px;
+    gap: 8px;
+    border: solid 1px var(--border-color);
+    border-radius: 6px;
+    background-color: var(--principal-bg-color);
+}
+
+.like_you .card_head {
+    padding: 0;
+}
+
+.like_you > a > button  {
+    justify-content: center;
+}
+
+.smaller {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    margin: 0px;
+}
+
+.booming {
+    margin-top: 24px;
+    display: grid;
+    gap: 24px;
+}
+
+.news p {
+    /* font-size: 0.8em; */
+    text-align: justify;
+    font-size: 1em;
+    color: var(--prim-txt-color);
+}
+
+.news p:nth-child(even) {
+    font-size: 0.8em;
+    color: var(--ter-txt-color);
+    margin-top: 5px;
+}
+
+/*========================== RESPONSIVIDADE ==========================*/
+.fixedbtn {
+    position: fixed;
+    bottom: 24px;
+    right: 64px;
+}
+
+/*========================== RESPONSIVIDADE ==========================*/
+.ndifmd,
+.ndifsm {
+    display: none;
+}
+
+@media screen and (min-width: 0px) {
+    .ndifmd {
+        display: initial;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .ndifsm {
+        display: initial;
+    }
 }
